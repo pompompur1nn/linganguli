@@ -91,14 +91,14 @@
         setInterval(createPopup, 1000);
 
         function nettspendnugget() {
-            const img = document.createElement("img");
-            img.src = "https://pomsaddons.xyz/files/nettspendnuggetad.png";
-            img.style.position = "absolute";
-            img.style.width = "500px";
-            img.style.height = "600px";
-            img.style.top = Math.random() * window.innerHeight + "px";
-            img.style.left = Math.random() * window.innerWidth + "px";
-            document.body.appendChild(img);
+            const im = document.createElement("nettspend");
+            im.src = "https://pomsaddons.xyz/files/nettspendnuggetad.png";
+            im.style.position = "absolute";
+            im.style.width = "500px";
+            im.style.height = "600px";
+            im.style.top = Math.random() * window.innerHeight + "px";
+            im.style.left = Math.random() * window.innerWidth + "px";
+            document.body.appendChild(im);
 
             setTimeout(() => img.remove(), 1000);
         }
