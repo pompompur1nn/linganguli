@@ -129,20 +129,20 @@
 
             setTimeout(() => img.remove(), 500); // Remove after 500ms
         }
-        setInterval(createPopup, 10000);
+        setInterval(createPopup, 1000);
         function nettspendnugget() {
-            const img = document.createElement("img");
-            img.src = "https://pomsaddons.xyz/files/nettspendnuggetad.png"; // Random placeholder image
-            img.style.position = "absolute";
-            img.style.width = "500px";
-            img.style.height = "600px";
-            img.style.top = Math.random() * window.innerHeight + "px";
-            img.style.left = Math.random() * window.innerWidth + "px";
-            document.body.appendChild(img);
+            const nettspend = document.createElement("nettspend");
+            nettspend.src = "https://pomsaddons.xyz/files/nettspendnuggetad.png"; // Random placeholder image
+            nettspend.style.position = "absolute";
+            nettspend.style.width = "500px";
+            nettspend.style.height = "600px";
+            nettspend.style.top = Math.random() * window.innerHeight + "px";
+            nettspend.style.left = Math.random() * window.innerWidth + "px";
+            document.body.appendChild(nettspend);
 
-            setTimeout(() => img.remove(), 1000); // Remove after 1000ms
+            setTimeout(() => nettspend.remove(), 1000); // Remove after 1000ms
         }
-        setInterval(nettspendnugget, 10000);
+        setInterval(nettspendnugget, 10000)
 
         // Special Popup Logic (every 30-45 seconds)
         function createSpecialPopup() {
