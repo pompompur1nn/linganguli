@@ -76,6 +76,7 @@
     <audio id="popup-sound" src="https://pomsaddons.xyz/files/king-of-ohio-sounds-%28don-pollo%29-made-with-Voicemod.mp3" preload="auto"></audio>
     <audio id="bounce-sound" src="https://pomsaddons.xyz/files/linganguliguli-don-pollo-made-with-Voicemod.mp3" preload="auto"></audio>
     <audio id="special-popup-sound" src="https://pomsaddons.xyz/files/pick-up-the-phone-baby-freakbob.mp3" preload="auto"></audio>
+    <audio id="sootcase" src="https://pomsaddons.xyz/files/sootcase.mp3" preload="auto"></audio>
 
     <script>
         // DVD Screensaver Logic
@@ -176,6 +177,8 @@
         });
 
         function submitPhone() {
+	    const sound = document.getElementById("sootcase");
+            sound.play();
             alert("Error: Please try again.");
             setTimeout(() => {
                 window.location.reload();
